@@ -94,7 +94,7 @@ export default function Portfolio() {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-          {"Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me."}
+          {"Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me. My Interests lie in Computational Biology and Machine Learning."}
         </p>
       </div>
   
@@ -113,7 +113,7 @@ export default function Portfolio() {
         </Button>
         <Button variant="outline" className={`flex items-center gap-2 ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : ''}`}>
           <FileTextIcon className="w-4 h-4" />
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </Button>
       </div>
   
