@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { GithubIcon, LinkedinIcon, MailIcon, FileTextIcon, GraduationCapIcon, SunIcon, MoonIcon, BriefcaseIcon, Code2Icon } from "lucide-react"
+import Image from 'next/image';
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(false)
@@ -39,19 +40,10 @@ export default function Portfolio() {
 
   const courses = [
     {
-      title: "CS 61B : Data Structures",
-    },
-    {
-      title: "CS 70 : Discrete Mathematics",
-    },
-    {
-      title: "CS 170 : Efficient Algorithms",
-    },
-    {
       title: "CS 186 : Database Systems",
     },
     {
-      title: "CS 61A : Structure and Interpretations of Computer Programs",
+      title: "CS 170 : Efficient Algorithms",
     },
     {
       title: "Data 100 : Principles of Data Science",
@@ -60,24 +52,38 @@ export default function Portfolio() {
       title: "CS 61C : Computer Architecture",
     },
     {
+      title: "CS 61B : Data Structures",
+    },
+    {
+      title: "CS 70 : Discrete Mathematics",
+    },
+    {
+      title: "CS 61A : Structure and Interpretations of Computer Programs",
+    },
+    {
       title: "Math 54 : Linear Algebra & Differential Equations",
     },
+    {
+      title: "Chem 3B : Organic Chemistry II",
+    },
+    {
+      title: "Physics 8A : Introductory Physics",
+    },
+    {
+      title: "Data C8 : Foundations of Data Science",
+    }
   ]
 
   const MainContent = () => (
     <>
       <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
-        <img
-          alt="Sean Rezaie"
-          className="rounded-full w-40 h-40 object-cover border-4 border-white shadow-lg"
-          src="/IMG_6705.JPG"
-          style={{
-            aspectRatio: "1",
-            objectFit: "cover",
-          }}
-          width="160"
-          height="160"
-        />
+      <Image
+        alt="Sean Rezaie"
+        className="rounded-full object-cover border-4 border-white shadow-lg"
+        src="/IMG_6705.JPG"
+        width={160}
+        height={160}
+      />
         <div className="text-center sm:text-left">
           <h1 className="text-3xl font-bold">Sean Rezaie</h1>
           <p className={`text-xl ${darkMode ? 'text-gray-300' : 'text-gray-500'} mt-2`}>B.A Computer Science | Minor Data Science</p>
@@ -88,7 +94,7 @@ export default function Portfolio() {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-          Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me. My interests lie in Computational Biology and Machine Learning.
+          {"Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me."}
         </p>
       </div>
   
