@@ -80,7 +80,7 @@ export default function Portfolio() {
       <Image
         alt="Sean Rezaie"
         className="rounded-full object-cover border-4 border-white shadow-lg"
-        src="/IMG_6705.JPG"
+        src="/IMG_6705.jpg"
         width={160}
         height={160}
       />
