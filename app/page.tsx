@@ -94,7 +94,7 @@ export default function Portfolio() {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">About Me</h2>
         <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-          {"Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me. My Interests lie in Computational Biology and Machine Learning."}
+          {"Hello! I'm Sean, a current student at UC Berkeley. I am passionate about solving problems, learning, and using my knowledge to benefit the world around me. My Interests lie in the power of Data, Computational Biology, and Software Development."}
         </p>
       </div>
   
