@@ -184,8 +184,16 @@ export default function Portfolio() {
               ]
             },
             {
+              title: "Gitlet",
+              date: "Dec 2024",
+              description: [
+                "Created a version-control system emulating Git with commit, merge, and branching functionalities"
+              ]
+
+            },
+            {
               title: "Build Your Own World",
-              date: "Jul 2023",
+              date: "Nov 2023",
               description: [
                 "Implemented a procedurally generated world engine in a team-based project, focusing on inherent software-development cycles",
                 "Leveraged iterative design principles and selective use of data structures and algorithms to create a tile-based 2D video game"
