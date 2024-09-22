@@ -113,7 +113,7 @@ export default function Portfolio() {
         </Button>
         <Button variant="outline" className={`flex items-center gap-2 ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : ''}`}>
           <FileTextIcon className="w-4 h-4" />
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/Rezaie,Sean_Resume_NGC.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </Button>
       </div>
   
@@ -167,6 +167,13 @@ export default function Portfolio() {
         <h2 className="text-2xl font-semibold mb-4">Personal Projects</h2>
         <div className="space-y-4">
           {[
+            {
+              title: "Conversify - Co-founder",
+              date: "June 2024",
+              description: [
+                "Co-founded Conversify, an AI-powered platform enhancing conversation skills through realistic practice scenarios"
+              ]
+            },
             {
               title: "Spot2 and Inmuebles24 Property Data Pipeline",
               date: "May 2024 – July 2024",
