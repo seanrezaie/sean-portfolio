@@ -13,6 +13,7 @@ const AnimatedBackground = () => {
       'rgba(59, 130, 246, OPACITY)',  // blue
       'rgba(234, 179, 8, OPACITY)',   // yellow
       'rgba(239, 68, 68, OPACITY)',   // red
+      'rgba(147, 51, 234, OPACITY)',  // purple
     ];
     
     // Randomly select one color for this session
