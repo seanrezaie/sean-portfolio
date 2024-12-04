@@ -23,7 +23,7 @@ const AnimatedBackground = () => {
     const getSpeedFactors = () => {
       const width = window.innerWidth;
       if (width >= 1920) { // Large screens (desktop)
-        return { base: 2.0, range: 1.5 };  // Twice as fast
+        return { base: 2.0, range: 1 };  // Twice as fast
       } else if (width >= 1280) { // Medium-large screens
         return { base: 1.5, range: 0.75 };  // 50% faster
       }
@@ -33,7 +33,10 @@ const AnimatedBackground = () => {
     const { base: baseSpeed, range: rangeSpeed } = getSpeedFactors();
 
     // Constants
-    const pipeCount = 20;
+    let pipeCount = 20;
+    if (window.innerWidth >= 1920) {
+      pipeCount = 30;
+    }
     const pipePropCount = 8;
     const pipePropsLength = pipeCount * pipePropCount;
     const turnCount = 8;
