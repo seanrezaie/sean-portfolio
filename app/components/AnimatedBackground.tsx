@@ -22,12 +22,12 @@ const AnimatedBackground = () => {
     // Adjust speed based on screen width
     const getSpeedFactors = () => {
       const width = window.innerWidth;
-      if (width >= 1920) { // Large screens
-        return { base: 0.5, range: 0.3 };
+      if (width >= 1920) { // Large screens (desktop)
+        return { base: 2.0, range: 1.0 };  // Twice as fast
       } else if (width >= 1280) { // Medium-large screens
-        return { base: 0.7, range: 0.4 };
+        return { base: 1.5, range: 0.75 };  // 50% faster
       }
-      return { base: 1, range: 0.5 }; // Default/smaller screens
+      return { base: 1, range: 0.5 }; // Default/smaller screens (laptops)
     }
 
     const { base: baseSpeed, range: rangeSpeed } = getSpeedFactors();
