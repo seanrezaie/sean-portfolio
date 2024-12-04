@@ -19,6 +19,19 @@ const AnimatedBackground = () => {
     // Randomly select one color for this session
     const selectedColor = colors[Math.floor(Math.random() * colors.length)];
 
+    // Adjust speed based on screen width
+    const getSpeedFactors = () => {
+      const width = window.innerWidth;
+      if (width >= 1920) { // Large screens
+        return { base: 0.5, range: 0.3 };
+      } else if (width >= 1280) { // Medium-large screens
+        return { base: 0.7, range: 0.4 };
+      }
+      return { base: 1, range: 0.5 }; // Default/smaller screens
+    }
+
+    const { base: baseSpeed, range: rangeSpeed } = getSpeedFactors();
+
     // Constants
     const pipeCount = 20;
     const pipePropCount = 8;
@@ -26,8 +39,6 @@ const AnimatedBackground = () => {
     const turnCount = 8;
     const turnAmount = (360 / turnCount) * (Math.PI / 180);
     const turnChanceRange = 58;
-    const baseSpeed = 1;
-    const rangeSpeed = 0.5;
     const baseTTL = 100;
     const rangeTTL = 300;
     const baseWidth = 1;
