@@ -1,5 +1,15 @@
 export const experience = [
   {
+    title: "Software Engineering Intern",
+    company: "REscan",
+    date: "Dec 2024 – Present",
+    description: [
+      "Developed and enhanced the user management portal, creating and deploying over 20 API endpoints using Amazon CDK (Python) for cloud infrastructure and React for the frontend improvements.",
+      "Improved portal performance and features by 40% using React and AWS cloud technologies, while maintaining 100% test coverage and clear documentation."
+    ],
+    technologies: ["React", "Python", "AWS CDK", "TypeScript", "Cloud Infrastructure"]
+},
+  {
     title: "Software Engineer",
     company: "BlackPrint Technologies",
     date: "April 2024 – Present",
@@ -28,15 +38,5 @@ export const experience = [
       "Contributed to the development of scalable solutions for marketing automation and data analysis."
     ],
     technologies: ["React", "Python", "APIs", "Data Analysis"]
-  },
-  {
-    title: "Data 8 Course Tutor",
-    company: "UC Berkeley CDSS",
-    date: "Jan 2024 – Present",
-    description: [
-      "Mentoring students in UC Berkeley's largest undergraduate course on the foundations of data science.",
-      "Leading discussion sections and providing guidance on programming concepts and statistical analysis."
-    ],
-    technologies: ["Python", "NumPy", "Pandas", "Statistical Analysis"]
   }
 ]

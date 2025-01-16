@@ -20,52 +20,53 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center">
       <AnimatedBackground />
-      <div className="relative z-10 text-center space-y-12">
+      <div className="relative z-10 text-center space-y-16">
         <div>
-          <h1 className="text-6xl font-bold text-white mb-4">Sean Rezaie</h1>
-          <p className="text-2xl text-gray-200">Portfolio</p>
+          <h1 className="text-7xl font-bold text-white mb-6 tracking-tight">Sean Rezaie</h1>
+          <p className="text-2xl text-gray-300 font-light tracking-wide">Software Engineer</p>
+          <div className="mt-4 text-gray-400 font-mono text-sm">berkeley.edu • san francisco, ca</div>
         </div>
         
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-6">
           <Button 
             variant="outline" 
-            size="icon"
-            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white"
+            size="lg"
+            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white rounded-xl"
             asChild
           >
             <a href="https://github.com/seanrezaie" target="_blank" rel="noopener noreferrer">
-              <GithubIcon className="h-4 w-4" />
+              <GithubIcon className="h-5 w-5" />
             </a>
           </Button>
           <Button 
             variant="outline" 
-            size="icon"
-            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white"
+            size="lg"
+            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white rounded-xl"
             asChild
           >
             <a href="https://www.linkedin.com/in/seanrezaie" target="_blank" rel="noopener noreferrer">
-              <LinkedinIcon className="h-4 w-4" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
           </Button>
           <Button 
             variant="outline" 
-            size="icon"
-            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white"
+            size="lg"
+            className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white rounded-xl"
             asChild
           >
-            <a href="/Rezaie,Sean_Resume_APX.pdf" target="_blank" rel="noopener noreferrer">
-              <FileTextIcon className="h-4 w-4" />
+            <a href="/Resume_Rezaie,Sean.pdf" target="_blank" rel="noopener noreferrer">
+              <FileTextIcon className="h-5 w-5" />
             </a>
           </Button>
         </div>
 
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <Button 
                 variant="outline"
                 className={cn(
-                  "bg-black/20 border-white/20 hover:bg-black/40 text-white px-6 rounded-lg",
+                  "bg-black/20 border-white/20 hover:bg-black/40 text-white px-8 py-6 rounded-xl font-medium tracking-wide",
                   pathname === link.href && "bg-black/40 border-white/40"
                 )}
               >
