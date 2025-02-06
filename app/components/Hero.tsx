@@ -54,7 +54,7 @@ export default function Hero() {
             className="bg-black/20 border-white/20 hover:bg-black/40 [&>svg]:text-white rounded-xl"
             asChild
           >
-            <a href="/Resume_Rezaie,Sean.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Rezaie,Sean_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <FileTextIcon className="h-5 w-5" />
             </a>
           </Button>
